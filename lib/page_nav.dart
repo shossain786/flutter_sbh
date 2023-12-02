@@ -3,19 +3,19 @@ import 'package:sbh786/common_lib.dart';
 
 /// Flutter code sample for [AppBar].
 
-class AppBarApp extends StatelessWidget {
-  const AppBarApp({super.key});
+class PracticeApp extends StatelessWidget {
+  const PracticeApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: AppBarExample(),
+      home: PracticeAppExample(),
     );
   }
 }
 
-class AppBarExample extends StatelessWidget {
-  const AppBarExample({super.key});
+class PracticeAppExample extends StatelessWidget {
+  const PracticeAppExample({super.key});
 
   @override
   Widget build(BuildContext context) {
