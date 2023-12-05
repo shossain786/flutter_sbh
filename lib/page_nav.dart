@@ -19,30 +19,9 @@ class PracticeAppExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle style = TextButton.styleFrom(
-      foregroundColor: Theme.of(context).colorScheme.onPrimary,
-    );
-    return Scaffold(
-      appBar: AppBar(
-        actions: <Widget>[
-          TextButton(
-            style: style,
-            onPressed: () {},
-            child: const Text('Home'),
-          ),
-          TextButton(
-            style: style,
-            onPressed: () {},
-            child: const Text('Courses'),
-          ),
-          TextButton(
-            style: style,
-            onPressed: () {},
-            child: const Text('About us'),
-          ),
-        ],
-      ),
-      body: const GradientConatainer(),
+    return const Scaffold(
+      appBar: MyAppBar(),
+      body: GradientConatainer(),
     );
   }
 }

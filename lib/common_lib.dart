@@ -31,3 +31,37 @@ class CenterText extends StatelessWidget {
     );
   }
 }
+
+class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const MyAppBar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final ButtonStyle style = TextButton.styleFrom(
+      foregroundColor: Theme.of(context).colorScheme.onPrimary,
+    );
+
+    return AppBar(
+      actions: <Widget>[
+        TextButton(
+          style: style,
+          onPressed: () {},
+          child: const Text('Home'),
+        ),
+        TextButton(
+          style: style,
+          onPressed: () {},
+          child: const Text('Courses'),
+        ),
+        TextButton(
+          style: style,
+          onPressed: () {},
+          child: const Text('About us'),
+        ),
+      ],
+    );
+  }
+
+  @override
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+}
