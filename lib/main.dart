@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        appBar: MyAppBarNew(), // Use your custom menu bar widget here
+        appBar: MyAppBarNew(),
         body: Center(
           child: Text('Your App Content Here'),
         ),
@@ -33,18 +33,13 @@ class MyAppBarNew extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       title: const Text('Your App Title'),
       actions: <Widget>[
-        // Add your menu bar items here
         IconButton(
           icon: const Icon(Icons.search),
-          onPressed: () {
-            // Handle search button press
-          },
+          onPressed: () {},
         ),
         IconButton(
           icon: const Icon(Icons.settings),
-          onPressed: () {
-            // Handle settings button press
-          },
+          onPressed: () {},
         ),
       ],
     );
