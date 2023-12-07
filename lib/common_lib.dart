@@ -13,6 +13,16 @@ class GradientConatainer extends StatelessWidget {
           colors: [Colors.lime, Colors.pink],
         ),
       ),
+      child: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CenterText(),
+            SizedBox(height: 20),
+            CustomGradientWidget(),
+          ],
+        ),
+      ),
     );
   }
 }
@@ -64,4 +74,34 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+}
+
+class CustomGradientWidget extends StatelessWidget {
+  const CustomGradientWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 200.0,
+      height: 50.0,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [Colors.yellow, Colors.orange], // Add your desired colors
+        ),
+        borderRadius: BorderRadius.circular(12.0),
+      ),
+      child: const Center(
+        child: Text(
+          'Custom Widget',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 18.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    );
+  }
 }
