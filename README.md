@@ -1,6 +1,6 @@
 # sbh786
 
-A new Flutter project.
+A new Flutter project. Gradient project
 
 ## Getting Started
 
